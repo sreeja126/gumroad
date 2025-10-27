@@ -25,16 +25,18 @@ const CreateProduct = () => {
       const formData = new FormData();
       formData.append("image", imageFile);
 
-      const uploadRes = await axios.post("http://localhost:3000/api/v1/image/upload", formData, {
+      const uploadRes = await axios.post("https://my-backend-9hhv.onrender.com/api/v1/image/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" ,Authorization: "Bearer " + localStorage.getItem("token")},
       });
+      
+
 
       const imageName = uploadRes.data.imageName;
       // Step 2: Upload the file
       const formData2 = new FormData();
       formData2.append("file", productFile);
 
-      const uploadRes2 = await axios.post("http://localhost:3000/api/v1/file/upload", formData2, {
+      const uploadRes2 = await axios.post("https://my-backend-9hhv.onrender.com/api/v1/file/upload", formData2, {
         headers: { "Content-Type": "multipart/form-data" , Authorization: "Bearer " + localStorage.getItem("token")},
       });
 
@@ -49,7 +51,7 @@ const CreateProduct = () => {
         price
       };
 
-      await axios.put("http://localhost:3000/api/v1/product/new-product", productData ,{headers : {
+      await axios.put("https://my-backend-9hhv.onrender.com/api/v1/product/new-product", productData ,{headers : {
         Authorization: "Bearer " + localStorage.getItem("token")
     }});
 
