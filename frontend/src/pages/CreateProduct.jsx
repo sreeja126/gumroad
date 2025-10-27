@@ -51,7 +51,7 @@ const CreateProduct = () => {
         price
       };
 
-      await axios.put("https://my-backend-9hhv.onrender.com/api/v1/product/new-product", productData ,{headers : {
+      await axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/v1/product/new-product`, productData ,{headers : {
         Authorization: "Bearer " + localStorage.getItem("token")
     }});
 

@@ -21,7 +21,7 @@ const UpdateProduct = () => {
                 price : price || "",
             };
             setLoading(true);
-            await axios.put("https://my-backend-9hhv.onrender.com/api/v1/product/update-product/"+pid, productData ,{headers : {
+            await axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/v1/product/update-product/`+pid, productData ,{headers : {
                 Authorization: "Bearer " + localStorage.getItem("token")
             }});
             alert("Product Updated successfully!");
