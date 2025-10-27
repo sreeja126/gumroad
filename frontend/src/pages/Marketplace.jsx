@@ -23,7 +23,8 @@ const Marketplace = () => {
     useEffect(() => {
         const products = async () => {
             try {
-                const productsRes = await axios.get("https://my-backend-9hhv.onrender.com/api/v1/marketplace/bulk",{headers : {
+                const productsRes = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/v1/marketplace/bulk`,{headers : {
+                
                     Authorization: "Bearer " + localStorage.getItem("token")
                 }});
                 if (productsRes.status === 200) setProducts(productsRes.data.data);
