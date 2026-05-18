@@ -4,19 +4,8 @@ Follow these simple steps to set up and run the Gumroad project on your local ma
 
 ---
 
-## ✅ Step 1: Download the Project
 
-Clone the repository from GitHub:
-
-```bash
-git clone https://github.com/rahul-misala/gumroad
-```
-
-If you're unable to clone it, download the ZIP file directly from GitHub, extract it, and open the extracted folder using **VS Code**.
-
----
-
-## ✅ Step 2: Open the Project in VS Code
+## ✅ Step 1: Open the Project in VS Code
 
 Make sure to **open the root `gumroad` folder** in VS Code — not just the `frontend` or `backend` folders.
 
@@ -30,7 +19,7 @@ gumroad
 
 ---
 
-## ✅ Step 3: Set the `My_dirName` Path in `Fileupload.js`
+## ✅ Step 2: Set the `My_dirName` Path in `Fileupload.js`
 
 1. Open `backend/routes/Fileupload.js`
 2. Locate the `My_dirName` variable.
@@ -45,7 +34,7 @@ const My_dirName = "C:\\Users\\rahul\\OneDrive\\Desktop\\gumroad\\frontend"7
 
 ---
 
-## ✅ Step 4: Set the `My_dirName` Path in `Imageupload.js`
+## ✅ Step 3: Set the `My_dirName` Path in `Imageupload.js`
 
 1. Open `backend/routes/Imageupload.js`
 2. Locate the `My_dirName` variable.
@@ -54,12 +43,12 @@ const My_dirName = "C:\\Users\\rahul\\OneDrive\\Desktop\\gumroad\\frontend"7
 Example:
 
 ```jsx
-const My_dirName = "C:\\Users\\rahul\\OneDrive\\Desktop\\gumroad\\frontend"
+const My_dirName = "C:\\Users\\sreeja126\\OneDrive\\Desktop\\gumroad\\frontend"
 ```
 
 ---
 
-## ✅ Step 5: Run the Frontend
+## ✅ Step 4: Run the Frontend
 
 1. Open a new terminal in VS Code:
     - Click the three-dot menu on the top bar → `Terminal` → `New Terminal`.
@@ -75,7 +64,7 @@ Your React app will start running at `http://localhost:5173` (or whichever port 
 
 ---
 
-## ✅ Step 6: Run the Backend
+## ✅ Step 5: Run the Backend
 
 1. Open another new terminal in VS Code.
 2. Run the following commands:
