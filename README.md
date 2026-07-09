@@ -29,7 +29,7 @@ gumroad
 Example:
 
 ```jsx
-const My_dirName = "C:\\Users\\rahul\\OneDrive\\Desktop\\gumroad\\frontend"7
+const My_dirName = "C:\\Users\\sreeja\\OneDrive\\Desktop\\gumroad\\frontend"7
 ```
 
 ---
@@ -43,7 +43,7 @@ const My_dirName = "C:\\Users\\rahul\\OneDrive\\Desktop\\gumroad\\frontend"7
 Example:
 
 ```jsx
-const My_dirName = "C:\\Users\\sreeja126\\OneDrive\\Desktop\\gumroad\\frontend"
+const My_dirName = "C:\\Users\\sreeja\\OneDrive\\Desktop\\gumroad\\frontend"
 ```
 
 ---
